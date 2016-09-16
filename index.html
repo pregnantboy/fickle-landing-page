@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,40 +10,44 @@
     <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <section style="padding:0; margin:0; width: 100vw; min-height: 100vh; background-size:cover; background-position:center;">
-      <div class="title" >
-        <h2 id="questionrow"><span id="question"></span></h2>
-        <h1 id="ficklerow" style="display:none">FICKLE.</h1>
-      </div>
-      <div class="bottom">
-      <h3><b>Coming Soon</b></h3>
-      </div>
+        <div class="title">
+            <h2 id="questionrow"><span id="question"></span></h2>
+            <h1 id="ficklerow" style="display:none">FICKLE.</h1>
+        </div>
+        <div class="bottom">
+            <h3><b>Coming Soon</b></h3>
+        </div>
     </section>
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/typed.js"></script>
     <script>
-      $(function(){
-          $("#question").typed({
-            strings: ["Got a question?", "Let's fickle it out"],
-            typeSpeed: 10,
-            startDelay: 30,
-            showCursor: true,
-            backDelay: 1000,
-            cursorChar: "|",
-            callback: function() {
-              setTimeout(function(){ 
-                $("#questionrow").fadeOut(700,function() {
-                    $("#ficklerow").fadeIn(700,function() {
-                      $(".bottom").fadeIn(1200);
-                    });
-                });
-              }, 2000);
-            }
-          });
-      });
+    $(document).ready(function() {
+        $(function() {
+            $("#question").typed({
+                strings: ["Got a question?", "Let's fickle it out"],
+                typeSpeed: 10,
+                startDelay: 30,
+                showCursor: true,
+                backDelay: 1000,
+                cursorChar: "|",
+                callback: function() {
+                    setTimeout(function() {
+                        $("#questionrow").fadeOut(700, function() {
+                            $("#ficklerow").fadeIn(700, function() {
+                                $(".bottom").fadeIn(1200);
+                            });
+                        });
+                    }, 2000);
+                }
+            });
+        });
+    });
     </script>
-  </body>
+</body>
+
 </html>
