@@ -1,0 +1,83 @@
+
+@font-face {
+	font-family: 'Gill Sans';
+	src: url('../fonts/GillSans-Light.eot');
+	src: url('../fonts/GillSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GillSans-Light.woff2') format('woff2'),
+		url('../fonts/GillSans-Light.woff') format('woff'),
+		url('../fonts/GillSans-Light.ttf') format('truetype'),
+		url('../fonts/GillSans-Light.svg#GillSans-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+body {
+	background: url('../assets/icon.png') center center/ 180px 180px no-repeat , linear-gradient( rgba(92,191,208,1) 50%, transparent 50%);
+	min-height: 600px;
+	height: 100vh;
+	font-family: 'Gill Sans', Open Sans;
+}
+
+.title {
+	height: 50vh;
+	min-height: 300px;
+	width: 100%;
+	padding-top: 70px;
+	text-align: center;
+}
+
+.title h2 {
+	padding-top: 20px;
+	color: white;
+	font-size: 50px;
+	font-weight: 500;
+	position: bottom;
+}
+
+.title h1 {
+	color: white;
+	font-size: 80px;
+	letter-spacing: 5px;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.bottom {
+	display:none;
+	height: 50vh;
+	min-height: 300px;
+	width: 100%;
+	padding-top: 120px;
+	text-align: center;
+}
+
+.bottom h3 {
+	font-family: Open Sans;
+	color:black;
+	text-transform: uppercase;
+	font-weight: 1500;
+	font-size: 17px;
+}
+
+.typed-cursor{
+	color:white;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
