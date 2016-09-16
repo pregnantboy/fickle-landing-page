@@ -26,7 +26,7 @@
     <script>
       $(function(){
           $("#question").typed({
-            strings: ["Got a question?", "Let's <i>fickle</i> it out"],
+            strings: ["Got a question?", "Let's fickle it out"],
             typeSpeed: 10,
             startDelay: 30,
             showCursor: true,
@@ -36,7 +36,7 @@
               setTimeout(function(){ 
                 $("#questionrow").fadeOut(700,function() {
                     $("#ficklerow").fadeIn(700,function() {
-                      $(".bottom").fadeIn(800);
+                      $(".bottom").fadeIn(1200);
                     });
                 });
               }, 2000);
